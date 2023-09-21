@@ -6,7 +6,7 @@ $idadeCrianca = 12;
 $idadeMaior = 18;
 $idadeMelhor = 65;
 
-if($qualASuaIdade <= idadeCrianca){
+if($qualASuaIdade <= $idadeCrianca){
 
 	echo "Criança";
 
@@ -20,9 +20,13 @@ if($qualASuaIdade <= idadeCrianca){
 
 }else{
 
-	echo "Idoso"
+	echo "Idoso";
 	
 }
 
+echo "<br>";
+
+//um operador que nao foi citado na aula de operadores
+echo ($qualASuaIdade < $idadeMaior) ? "Menor de Idade" : "Maior de Idade";
 
  ?>
